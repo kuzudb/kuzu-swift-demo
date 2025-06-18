@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B05327C2DEE19DD0019E5D0 /* mnist.parquet in Resources */ = {isa = PBXBuildFile; fileRef = 4B05327B2DEE19DD0019E5D0 /* mnist.parquet */; };
+		4B05327F2DEE1B790019E5D0 /* lastfm_id.npy in Resources */ = {isa = PBXBuildFile; fileRef = 4B05327D2DEE1B790019E5D0 /* lastfm_id.npy */; };
+		4B0532802DEE1B790019E5D0 /* lastfm_train.npy in Resources */ = {isa = PBXBuildFile; fileRef = 4B05327E2DEE1B790019E5D0 /* lastfm_train.npy */; };
+		4B110E162DFB7D8700501AC4 /* collection_sample.tsv in Resources */ = {isa = PBXBuildFile; fileRef = 4B110E152DFB7D8700501AC4 /* collection_sample.tsv */; };
+		4B1407DF2DEDBB1000923ADF /* Kuzu in Frameworks */ = {isa = PBXBuildFile; productRef = 4B1407DE2DEDBB1000923ADF /* Kuzu */; };
+		4B5DAAD52E035ED40037A598 /* forum_hasModerator_person_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAB42E035ED40037A598 /* forum_hasModerator_person_0_0.csv */; };
+		4B5DAAD62E035ED40037A598 /* tagclass_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAACF2E035ED40037A598 /* tagclass_0_0.csv */; };
+		4B5DAAD72E035ED40037A598 /* comment_hasTag_tag_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAAD2E035ED40037A598 /* comment_hasTag_tag_0_0.csv */; };
+		4B5DAAD82E035ED40037A598 /* likesad.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAB92E035ED40037A598 /* likesad.csv */; };
+		4B5DAAD92E035ED40037A598 /* post_hasTag_tag_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAACB2E035ED40037A598 /* post_hasTag_tag_0_0.csv */; };
+		4B5DAADA2E035ED40037A598 /* likesab.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAB72E035ED40037A598 /* likesab.csv */; };
+		4B5DAADB2E035ED40037A598 /* organisation_isLocatedIn_place_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAABB2E035ED40037A598 /* organisation_isLocatedIn_place_0_0.csv */; };
+		4B5DAADC2E035ED40037A598 /* place_isPartOf_place_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAC72E035ED40037A598 /* place_isPartOf_place_0_0.csv */; };
+		4B5DAADD2E035ED40037A598 /* person_likes_comment_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAC12E035ED40037A598 /* person_likes_comment_0_0.csv */; };
+		4B5DAADE2E035ED40037A598 /* person_isLocatedIn_place_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAABF2E035ED40037A598 /* person_isLocatedIn_place_0_0.csv */; };
+		4B5DAADF2E035ED40037A598 /* comment_isLocatedIn_place_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAAE2E035ED40037A598 /* comment_isLocatedIn_place_0_0.csv */; };
+		4B5DAAE02E035ED40037A598 /* post_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAC82E035ED40037A598 /* post_0_0.csv */; };
+		4B5DAAE12E035ED40037A598 /* comment_replyOf_post_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAB02E035ED40037A598 /* comment_replyOf_post_0_0.csv */; };
+		4B5DAAE22E035ED40037A598 /* comment_0_2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAAB2E035ED40037A598 /* comment_0_2.csv */; };
+		4B5DAAE32E035ED40037A598 /* comment_replyOf_comment_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAAF2E035ED40037A598 /* comment_replyOf_comment_0_0.csv */; };
+		4B5DAAE42E035ED40037A598 /* copy.cypher in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAD22E035ED40037A598 /* copy.cypher */; };
+		4B5DAAE52E035ED40037A598 /* post_0_1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAC92E035ED40037A598 /* post_0_1.csv */; };
+		4B5DAAE62E035ED40037A598 /* person_email_emailaddress_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAABD2E035ED40037A598 /* person_email_emailaddress_0_0.csv */; };
+		4B5DAAE72E035ED40037A598 /* forum_hasMember_person_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAB32E035ED40037A598 /* forum_hasMember_person_0_0.csv */; };
+		4B5DAAE82E035ED40037A598 /* comment_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAA92E035ED40037A598 /* comment_0_0.csv */; };
+		4B5DAAE92E035ED40037A598 /* person_studyAt_organisation_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAC42E035ED40037A598 /* person_studyAt_organisation_0_0.csv */; };
+		4B5DAAEA2E035ED40037A598 /* person_workAt_organisation_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAC52E035ED40037A598 /* person_workAt_organisation_0_0.csv */; };
+		4B5DAAEB2E035ED40037A598 /* comment_hasCreator_person_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAAC2E035ED40037A598 /* comment_hasCreator_person_0_0.csv */; };
+		4B5DAAEC2E035ED40037A598 /* person_hasInterest_tag_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAABE2E035ED40037A598 /* person_hasInterest_tag_0_0.csv */; };
+		4B5DAAED2E035ED40037A598 /* person_knows_person_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAC02E035ED40037A598 /* person_knows_person_0_0.csv */; };
+		4B5DAAEE2E035ED40037A598 /* post_isLocatedIn_place_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAACC2E035ED40037A598 /* post_isLocatedIn_place_0_0.csv */; };
+		4B5DAAEF2E035ED40037A598 /* person_speaks_language_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAC32E035ED40037A598 /* person_speaks_language_0_0.csv */; };
+		4B5DAAF02E035ED40037A598 /* person_likes_post_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAC22E035ED40037A598 /* person_likes_post_0_0.csv */; };
+		4B5DAAF12E035ED40037A598 /* organisation_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAABA2E035ED40037A598 /* organisation_0_0.csv */; };
+		4B5DAAF22E035ED40037A598 /* place_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAC62E035ED40037A598 /* place_0_0.csv */; };
+		4B5DAAF32E035ED40037A598 /* forum_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAB12E035ED40037A598 /* forum_0_0.csv */; };
+		4B5DAAF42E035ED40037A598 /* likesaa.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAB62E035ED40037A598 /* likesaa.csv */; };
+		4B5DAAF52E035ED40037A598 /* post_hasCreator_person_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAACA2E035ED40037A598 /* post_hasCreator_person_0_0.csv */; };
+		4B5DAAF62E035ED40037A598 /* schema.cypher in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAD32E035ED40037A598 /* schema.cypher */; };
+		4B5DAAF72E035ED40037A598 /* tagclass_isSubclassOf_tagclass_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAD02E035ED40037A598 /* tagclass_isSubclassOf_tagclass_0_0.csv */; };
+		4B5DAAF82E035ED40037A598 /* comment_0_1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAAA2E035ED40037A598 /* comment_0_1.csv */; };
+		4B5DAAF92E035ED40037A598 /* forum_hasTag_tag_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAB52E035ED40037A598 /* forum_hasTag_tag_0_0.csv */; };
+		4B5DAAFA2E035ED40037A598 /* person_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAABC2E035ED40037A598 /* person_0_0.csv */; };
+		4B5DAAFB2E035ED40037A598 /* likesac.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAB82E035ED40037A598 /* likesac.csv */; };
+		4B5DAAFC2E035ED40037A598 /* tag_hasType_tagclass_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAACE2E035ED40037A598 /* tag_hasType_tagclass_0_0.csv */; };
+		4B5DAAFD2E035ED40037A598 /* tag_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAACD2E035ED40037A598 /* tag_0_0.csv */; };
+		4B5DAAFE2E035ED40037A598 /* forum_containerOf_post_0_0.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DAAB22E035ED40037A598 /* forum_containerOf_post_0_0.csv */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B05327B2DEE19DD0019E5D0 /* mnist.parquet */ = {isa = PBXFileReference; lastKnownFileType = file; path = mnist.parquet; sourceTree = "<group>"; };
+		4B05327D2DEE1B790019E5D0 /* lastfm_id.npy */ = {isa = PBXFileReference; lastKnownFileType = file; path = lastfm_id.npy; sourceTree = "<group>"; };
+		4B05327E2DEE1B790019E5D0 /* lastfm_train.npy */ = {isa = PBXFileReference; lastKnownFileType = file; path = lastfm_train.npy; sourceTree = "<group>"; };
+		4B110E152DFB7D8700501AC4 /* collection_sample.tsv */ = {isa = PBXFileReference; lastKnownFileType = text; path = collection_sample.tsv; sourceTree = "<group>"; };
+		4B1D5A662DEDB9F700413451 /* KuzuSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KuzuSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B5DAAA92E035ED40037A598 /* comment_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = comment_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAAA2E035ED40037A598 /* comment_0_1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = comment_0_1.csv; sourceTree = "<group>"; };
+		4B5DAAAB2E035ED40037A598 /* comment_0_2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = comment_0_2.csv; sourceTree = "<group>"; };
+		4B5DAAAC2E035ED40037A598 /* comment_hasCreator_person_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = comment_hasCreator_person_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAAD2E035ED40037A598 /* comment_hasTag_tag_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = comment_hasTag_tag_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAAE2E035ED40037A598 /* comment_isLocatedIn_place_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = comment_isLocatedIn_place_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAAF2E035ED40037A598 /* comment_replyOf_comment_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = comment_replyOf_comment_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAB02E035ED40037A598 /* comment_replyOf_post_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = comment_replyOf_post_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAB12E035ED40037A598 /* forum_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = forum_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAB22E035ED40037A598 /* forum_containerOf_post_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = forum_containerOf_post_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAB32E035ED40037A598 /* forum_hasMember_person_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = forum_hasMember_person_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAB42E035ED40037A598 /* forum_hasModerator_person_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = forum_hasModerator_person_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAB52E035ED40037A598 /* forum_hasTag_tag_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = forum_hasTag_tag_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAB62E035ED40037A598 /* likesaa.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = likesaa.csv; sourceTree = "<group>"; };
+		4B5DAAB72E035ED40037A598 /* likesab.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = likesab.csv; sourceTree = "<group>"; };
+		4B5DAAB82E035ED40037A598 /* likesac.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = likesac.csv; sourceTree = "<group>"; };
+		4B5DAAB92E035ED40037A598 /* likesad.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = likesad.csv; sourceTree = "<group>"; };
+		4B5DAABA2E035ED40037A598 /* organisation_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = organisation_0_0.csv; sourceTree = "<group>"; };
+		4B5DAABB2E035ED40037A598 /* organisation_isLocatedIn_place_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = organisation_isLocatedIn_place_0_0.csv; sourceTree = "<group>"; };
+		4B5DAABC2E035ED40037A598 /* person_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = person_0_0.csv; sourceTree = "<group>"; };
+		4B5DAABD2E035ED40037A598 /* person_email_emailaddress_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = person_email_emailaddress_0_0.csv; sourceTree = "<group>"; };
+		4B5DAABE2E035ED40037A598 /* person_hasInterest_tag_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = person_hasInterest_tag_0_0.csv; sourceTree = "<group>"; };
+		4B5DAABF2E035ED40037A598 /* person_isLocatedIn_place_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = person_isLocatedIn_place_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAC02E035ED40037A598 /* person_knows_person_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = person_knows_person_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAC12E035ED40037A598 /* person_likes_comment_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = person_likes_comment_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAC22E035ED40037A598 /* person_likes_post_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = person_likes_post_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAC32E035ED40037A598 /* person_speaks_language_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = person_speaks_language_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAC42E035ED40037A598 /* person_studyAt_organisation_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = person_studyAt_organisation_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAC52E035ED40037A598 /* person_workAt_organisation_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = person_workAt_organisation_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAC62E035ED40037A598 /* place_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = place_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAC72E035ED40037A598 /* place_isPartOf_place_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = place_isPartOf_place_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAC82E035ED40037A598 /* post_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = post_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAC92E035ED40037A598 /* post_0_1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = post_0_1.csv; sourceTree = "<group>"; };
+		4B5DAACA2E035ED40037A598 /* post_hasCreator_person_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = post_hasCreator_person_0_0.csv; sourceTree = "<group>"; };
+		4B5DAACB2E035ED40037A598 /* post_hasTag_tag_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = post_hasTag_tag_0_0.csv; sourceTree = "<group>"; };
+		4B5DAACC2E035ED40037A598 /* post_isLocatedIn_place_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = post_isLocatedIn_place_0_0.csv; sourceTree = "<group>"; };
+		4B5DAACD2E035ED40037A598 /* tag_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = tag_0_0.csv; sourceTree = "<group>"; };
+		4B5DAACE2E035ED40037A598 /* tag_hasType_tagclass_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = tag_hasType_tagclass_0_0.csv; sourceTree = "<group>"; };
+		4B5DAACF2E035ED40037A598 /* tagclass_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = tagclass_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAD02E035ED40037A598 /* tagclass_isSubclassOf_tagclass_0_0.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = tagclass_isSubclassOf_tagclass_0_0.csv; sourceTree = "<group>"; };
+		4B5DAAD22E035ED40037A598 /* copy.cypher */ = {isa = PBXFileReference; lastKnownFileType = text; path = copy.cypher; sourceTree = "<group>"; };
+		4B5DAAD32E035ED40037A598 /* schema.cypher */ = {isa = PBXFileReference; lastKnownFileType = text; path = schema.cypher; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4B5DAAA72E0358270037A598 /* Exceptions for "KuzuSwiftDemo" folder in "KuzuSwiftDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4B1D5A652DEDB9F700413451 /* KuzuSwiftDemo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4B1D5A682DEDB9F700413451 /* KuzuSwiftDemo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4B5DAAA72E0358270037A598 /* Exceptions for "KuzuSwiftDemo" folder in "KuzuSwiftDemo" target */,
+			);
+			path = KuzuSwiftDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B1D5A632DEDB9F700413451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B1407DF2DEDBB1000923ADF /* Kuzu in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B1D5A5D2DEDB9F700413451 = {
+			isa = PBXGroup;
+			children = (
+				4B1D5A682DEDB9F700413451 /* KuzuSwiftDemo */,
+				4B1D5A672DEDB9F700413451 /* Products */,
+				4B5DAAA82E0359590037A598 /* Datasets */,
+			);
+			sourceTree = "<group>";
+		};
+		4B1D5A672DEDB9F700413451 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B1D5A662DEDB9F700413451 /* KuzuSwiftDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B5DAAA82E0359590037A598 /* Datasets */ = {
+			isa = PBXGroup;
+			children = (
+				4B05327B2DEE19DD0019E5D0 /* mnist.parquet */,
+				4B05327D2DEE1B790019E5D0 /* lastfm_id.npy */,
+				4B05327E2DEE1B790019E5D0 /* lastfm_train.npy */,
+				4B110E152DFB7D8700501AC4 /* collection_sample.tsv */,
+				4B5DAAD42E035ED40037A598 /* ldbc-1 */,
+			);
+			path = Datasets;
+			sourceTree = "<group>";
+		};
+		4B5DAAD12E035ED40037A598 /* csv */ = {
+			isa = PBXGroup;
+			children = (
+				4B5DAAA92E035ED40037A598 /* comment_0_0.csv */,
+				4B5DAAAA2E035ED40037A598 /* comment_0_1.csv */,
+				4B5DAAAB2E035ED40037A598 /* comment_0_2.csv */,
+				4B5DAAAC2E035ED40037A598 /* comment_hasCreator_person_0_0.csv */,
+				4B5DAAAD2E035ED40037A598 /* comment_hasTag_tag_0_0.csv */,
+				4B5DAAAE2E035ED40037A598 /* comment_isLocatedIn_place_0_0.csv */,
+				4B5DAAAF2E035ED40037A598 /* comment_replyOf_comment_0_0.csv */,
+				4B5DAAB02E035ED40037A598 /* comment_replyOf_post_0_0.csv */,
+				4B5DAAB12E035ED40037A598 /* forum_0_0.csv */,
+				4B5DAAB22E035ED40037A598 /* forum_containerOf_post_0_0.csv */,
+				4B5DAAB32E035ED40037A598 /* forum_hasMember_person_0_0.csv */,
+				4B5DAAB42E035ED40037A598 /* forum_hasModerator_person_0_0.csv */,
+				4B5DAAB52E035ED40037A598 /* forum_hasTag_tag_0_0.csv */,
+				4B5DAAB62E035ED40037A598 /* likesaa.csv */,
+				4B5DAAB72E035ED40037A598 /* likesab.csv */,
+				4B5DAAB82E035ED40037A598 /* likesac.csv */,
+				4B5DAAB92E035ED40037A598 /* likesad.csv */,
+				4B5DAABA2E035ED40037A598 /* organisation_0_0.csv */,
+				4B5DAABB2E035ED40037A598 /* organisation_isLocatedIn_place_0_0.csv */,
+				4B5DAABC2E035ED40037A598 /* person_0_0.csv */,
+				4B5DAABD2E035ED40037A598 /* person_email_emailaddress_0_0.csv */,
+				4B5DAABE2E035ED40037A598 /* person_hasInterest_tag_0_0.csv */,
+				4B5DAABF2E035ED40037A598 /* person_isLocatedIn_place_0_0.csv */,
+				4B5DAAC02E035ED40037A598 /* person_knows_person_0_0.csv */,
+				4B5DAAC12E035ED40037A598 /* person_likes_comment_0_0.csv */,
+				4B5DAAC22E035ED40037A598 /* person_likes_post_0_0.csv */,
+				4B5DAAC32E035ED40037A598 /* person_speaks_language_0_0.csv */,
+				4B5DAAC42E035ED40037A598 /* person_studyAt_organisation_0_0.csv */,
+				4B5DAAC52E035ED40037A598 /* person_workAt_organisation_0_0.csv */,
+				4B5DAAC62E035ED40037A598 /* place_0_0.csv */,
+				4B5DAAC72E035ED40037A598 /* place_isPartOf_place_0_0.csv */,
+				4B5DAAC82E035ED40037A598 /* post_0_0.csv */,
+				4B5DAAC92E035ED40037A598 /* post_0_1.csv */,
+				4B5DAACA2E035ED40037A598 /* post_hasCreator_person_0_0.csv */,
+				4B5DAACB2E035ED40037A598 /* post_hasTag_tag_0_0.csv */,
+				4B5DAACC2E035ED40037A598 /* post_isLocatedIn_place_0_0.csv */,
+				4B5DAACD2E035ED40037A598 /* tag_0_0.csv */,
+				4B5DAACE2E035ED40037A598 /* tag_hasType_tagclass_0_0.csv */,
+				4B5DAACF2E035ED40037A598 /* tagclass_0_0.csv */,
+				4B5DAAD02E035ED40037A598 /* tagclass_isSubclassOf_tagclass_0_0.csv */,
+			);
+			path = csv;
+			sourceTree = "<group>";
+		};
+		4B5DAAD42E035ED40037A598 /* ldbc-1 */ = {
+			isa = PBXGroup;
+			children = (
+				4B5DAAD12E035ED40037A598 /* csv */,
+				4B5DAAD22E035ED40037A598 /* copy.cypher */,
+				4B5DAAD32E035ED40037A598 /* schema.cypher */,
+			);
+			path = "ldbc-1";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B1D5A652DEDB9F700413451 /* KuzuSwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B1D5A8F2DEDB9F900413451 /* Build configuration list for PBXNativeTarget "KuzuSwiftDemo" */;
+			buildPhases = (
+				4B1D5A622DEDB9F700413451 /* Sources */,
+				4B1D5A632DEDB9F700413451 /* Frameworks */,
+				4B1D5A642DEDB9F700413451 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4B1D5A682DEDB9F700413451 /* KuzuSwiftDemo */,
+			);
+			name = KuzuSwiftDemo;
+			packageProductDependencies = (
+				4B1407DE2DEDBB1000923ADF /* Kuzu */,
+			);
+			productName = KuzuSwiftDemo;
+			productReference = 4B1D5A662DEDB9F700413451 /* KuzuSwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B1D5A5E2DEDB9F700413451 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					4B1D5A652DEDB9F700413451 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 4B1D5A612DEDB9F700413451 /* Build configuration list for PBXProject "KuzuSwiftDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B1D5A5D2DEDB9F700413451;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4B1407DD2DEDBB1000923ADF /* XCRemoteSwiftPackageReference "kuzu-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4B1D5A672DEDB9F700413451 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B1D5A652DEDB9F700413451 /* KuzuSwiftDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B1D5A642DEDB9F700413451 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B5DAAD52E035ED40037A598 /* forum_hasModerator_person_0_0.csv in Resources */,
+				4B5DAAD62E035ED40037A598 /* tagclass_0_0.csv in Resources */,
+				4B5DAAD72E035ED40037A598 /* comment_hasTag_tag_0_0.csv in Resources */,
+				4B5DAAD82E035ED40037A598 /* likesad.csv in Resources */,
+				4B5DAAD92E035ED40037A598 /* post_hasTag_tag_0_0.csv in Resources */,
+				4B5DAADA2E035ED40037A598 /* likesab.csv in Resources */,
+				4B5DAADB2E035ED40037A598 /* organisation_isLocatedIn_place_0_0.csv in Resources */,
+				4B5DAADC2E035ED40037A598 /* place_isPartOf_place_0_0.csv in Resources */,
+				4B5DAADD2E035ED40037A598 /* person_likes_comment_0_0.csv in Resources */,
+				4B5DAADE2E035ED40037A598 /* person_isLocatedIn_place_0_0.csv in Resources */,
+				4B5DAADF2E035ED40037A598 /* comment_isLocatedIn_place_0_0.csv in Resources */,
+				4B5DAAE02E035ED40037A598 /* post_0_0.csv in Resources */,
+				4B5DAAE12E035ED40037A598 /* comment_replyOf_post_0_0.csv in Resources */,
+				4B5DAAE22E035ED40037A598 /* comment_0_2.csv in Resources */,
+				4B5DAAE32E035ED40037A598 /* comment_replyOf_comment_0_0.csv in Resources */,
+				4B5DAAE42E035ED40037A598 /* copy.cypher in Resources */,
+				4B5DAAE52E035ED40037A598 /* post_0_1.csv in Resources */,
+				4B5DAAE62E035ED40037A598 /* person_email_emailaddress_0_0.csv in Resources */,
+				4B5DAAE72E035ED40037A598 /* forum_hasMember_person_0_0.csv in Resources */,
+				4B5DAAE82E035ED40037A598 /* comment_0_0.csv in Resources */,
+				4B5DAAE92E035ED40037A598 /* person_studyAt_organisation_0_0.csv in Resources */,
+				4B5DAAEA2E035ED40037A598 /* person_workAt_organisation_0_0.csv in Resources */,
+				4B5DAAEB2E035ED40037A598 /* comment_hasCreator_person_0_0.csv in Resources */,
+				4B5DAAEC2E035ED40037A598 /* person_hasInterest_tag_0_0.csv in Resources */,
+				4B5DAAED2E035ED40037A598 /* person_knows_person_0_0.csv in Resources */,
+				4B5DAAEE2E035ED40037A598 /* post_isLocatedIn_place_0_0.csv in Resources */,
+				4B5DAAEF2E035ED40037A598 /* person_speaks_language_0_0.csv in Resources */,
+				4B5DAAF02E035ED40037A598 /* person_likes_post_0_0.csv in Resources */,
+				4B5DAAF12E035ED40037A598 /* organisation_0_0.csv in Resources */,
+				4B5DAAF22E035ED40037A598 /* place_0_0.csv in Resources */,
+				4B5DAAF32E035ED40037A598 /* forum_0_0.csv in Resources */,
+				4B5DAAF42E035ED40037A598 /* likesaa.csv in Resources */,
+				4B5DAAF52E035ED40037A598 /* post_hasCreator_person_0_0.csv in Resources */,
+				4B5DAAF62E035ED40037A598 /* schema.cypher in Resources */,
+				4B5DAAF72E035ED40037A598 /* tagclass_isSubclassOf_tagclass_0_0.csv in Resources */,
+				4B5DAAF82E035ED40037A598 /* comment_0_1.csv in Resources */,
+				4B5DAAF92E035ED40037A598 /* forum_hasTag_tag_0_0.csv in Resources */,
+				4B5DAAFA2E035ED40037A598 /* person_0_0.csv in Resources */,
+				4B5DAAFB2E035ED40037A598 /* likesac.csv in Resources */,
+				4B5DAAFC2E035ED40037A598 /* tag_hasType_tagclass_0_0.csv in Resources */,
+				4B5DAAFD2E035ED40037A598 /* tag_0_0.csv in Resources */,
+				4B5DAAFE2E035ED40037A598 /* forum_containerOf_post_0_0.csv in Resources */,
+				4B05327C2DEE19DD0019E5D0 /* mnist.parquet in Resources */,
+				4B05327F2DEE1B790019E5D0 /* lastfm_id.npy in Resources */,
+				4B0532802DEE1B790019E5D0 /* lastfm_train.npy in Resources */,
+				4B110E162DFB7D8700501AC4 /* collection_sample.tsv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B1D5A622DEDB9F700413451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B1D5A902DEDB9F900413451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KuzuSwiftDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kuzu Demo";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuzudb.KuzuSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B1D5A912DEDB9F900413451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KuzuSwiftDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kuzu Demo";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuzudb.KuzuSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B1D5A922DEDB9F900413451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B1D5A932DEDB9F900413451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B1D5A612DEDB9F700413451 /* Build configuration list for PBXProject "KuzuSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B1D5A922DEDB9F900413451 /* Debug */,
+				4B1D5A932DEDB9F900413451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B1D5A8F2DEDB9F900413451 /* Build configuration list for PBXNativeTarget "KuzuSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B1D5A902DEDB9F900413451 /* Debug */,
+				4B1D5A912DEDB9F900413451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B1407DD2DEDBB1000923ADF /* XCRemoteSwiftPackageReference "kuzu-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kuzudb/kuzu-swift/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B1407DE2DEDBB1000923ADF /* Kuzu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B1407DD2DEDBB1000923ADF /* XCRemoteSwiftPackageReference "kuzu-swift" */;
+			productName = Kuzu;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4B1D5A5E2DEDB9F700413451 /* Project object */;
+}

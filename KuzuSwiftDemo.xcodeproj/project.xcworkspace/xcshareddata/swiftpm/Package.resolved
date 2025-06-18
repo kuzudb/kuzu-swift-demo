@@ -1,0 +1,15 @@
+{
+  "originHash" : "6aca3e49a875625c09d31258253a241bd480c90e7d76fed2dfe0c8877619c78a",
+  "pins" : [
+    {
+      "identity" : "kuzu-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kuzudb/kuzu-swift/",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e9944a12fc67f116c6c8890704d2bf1feaba58cc"
+      }
+    }
+  ],
+  "version" : 3
+}
