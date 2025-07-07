@@ -1,6 +1,6 @@
 //
-//  kuzu-swift
-//  https://github.com/kuzudb/kuzu-swift
+//  kuzu-swift-demo
+//  https://github.com/kuzudb/kuzu-swift-demo
 //
 //  Copyright © 2023 - 2025 Kùzu Inc.
 //  This code is licensed under MIT license (see LICENSE for details)
@@ -27,6 +27,91 @@ class SetupViewController: UIViewController {
         runMnistButton.isEnabled = false
     }
 
+
+
+    @IBOutlet weak var initKuzuButton: UIButton!
+    @IBOutlet weak var loadMsMarcoButton: UIButton!
+    @IBOutlet weak var loadLdbcButton: UIButton!
+    @IBOutlet weak var loadLastFmButton: UIButton!
+    @IBOutlet weak var loadMnistButton: UIButton!
+    @IBOutlet weak var runFtsButton: UIButton!
+    @IBOutlet weak var runLdbcButton: UIButton!
+    @IBOutlet weak var runLastFmButton: UIButton!
+    @IBOutlet weak var runMnistButton: UIButton!
+
+    @IBAction func initKuzuClicked(_ sender: Any) {
+        let bmSize = Int(bmSizeTextField.text!)! * 1024 * 1024
+        let numThreads = Int(threadsTextField.text!)!
+        let resultVc = self.getResultViewController()!
+        resultVc.initKuzu(bmSize: bmSize, numThreads: numThreads)
+        initKuzuButton.isEnabled = false
+        toggleLoadButtons(true)
+        toggleResultView()
+    }
+
+    @IBAction func loadMsMarcoClicked(_ sender: Any) {
+        let resultVc = self.getResultViewController()!
+        try! resultVc.loadMsMarco()
+        runFtsButton.isEnabled = true
+        toggleLoadButtons(false)
+        toggleResultView()
+    }
+
+    @IBAction func loadLdbcClicked(_ sender: Any) {
+        let resultVc = self.getResultViewController()
+        try! resultVc?.loadLdbc()
+        toggleLoadButtons(false)
+        runLdbcButton.isEnabled = true
+        toggleResultView()
+    }
+
+    @IBAction func loadLastFmClicked(_ sender: Any) {
+        let resultVc = self.getResultViewController()
+        try! resultVc?.loadLastFm()
+        toggleLoadButtons(false)
+        runLastFmButton.isEnabled = true
+        toggleResultView()
+    }
+
+    @IBAction func loadMnistClicked(_ sender: Any) {
+        let resultVc = self.getResultViewController()
+        try! resultVc?.loadMnist()
+        toggleLoadButtons(false)
+        runMnistButton.isEnabled = true
+        toggleResultView()
+    }
+
+    @IBAction func runFtsClicked(_ sender: Any) {
+        let resultVc = self.getResultViewController()!
+        try! resultVc.runFts()
+        toggleResultView()
+    }
+
+    @IBAction func runLdbcClicked(_ sender: Any) {
+        let resultVc = self.getResultViewController()!
+        try! resultVc.runLdbc()
+        toggleResultView()
+    }
+
+    @IBAction func runLastFmClicked(_ sender: Any) {
+        let resultVc = self.getResultViewController()!
+        try! resultVc.runLastFm()
+        toggleResultView()
+    }
+
+    @IBAction func runMnistClicked(_ sender: Any) {
+        let resultVc = self.getResultViewController()!
+        try! resultVc.runMnist()
+        toggleResultView()
+    }
+
+    func toggleLoadButtons(_ enabled: Bool){
+        loadMsMarcoButton.isEnabled = enabled
+        loadLdbcButton.isEnabled = enabled
+        loadLastFmButton.isEnabled = enabled
+        loadMnistButton.isEnabled = enabled
+    }
+    
     func getResultViewController() -> ResultViewController? {
         if let tabBarController = self.tabBarController,
             let viewControllers = tabBarController.viewControllers,
@@ -38,98 +123,12 @@ class SetupViewController: UIViewController {
         return nil
     }
     
-    @IBOutlet weak var loadMsMarcoButton: UIButton!
-    @IBOutlet weak var loadLdbcButton: UIButton!
-    @IBOutlet weak var loadLastFmButton: UIButton!
-    @IBOutlet weak var loadMnistButton: UIButton!
-    @IBOutlet weak var runFtsButton: UIButton!
-    @IBOutlet weak var runLdbcButton: UIButton!
-    @IBOutlet weak var runLastFmButton: UIButton!
-    @IBOutlet weak var runMnistButton: UIButton!
-
+    func toggleResultView(){
+        if let tabBarController = self.tabBarController {
+            tabBarController.selectedIndex = 2
+        }
+    }
     
-    @IBAction func initKuzuClicked(_ sender: Any) {
-        let bmSize = Int(bmSizeTextField.text!)! * 1024 * 1024
-        let numThreads = Int(threadsTextField.text!)!
-        let resultVc = self.getResultViewController()!
-        resultVc.initKuzu(bmSize: bmSize, numThreads: numThreads)
-        loadMsMarcoButton.isEnabled = true
-        loadLdbcButton.isEnabled = true
-        loadLastFmButton.isEnabled = true
-        loadMnistButton.isEnabled = true
-        if let tabBarController = self.tabBarController{
-            tabBarController.selectedViewController = resultVc
-        }
-    }
-
-    @IBAction func loadMsMarcoClicked(_ sender: Any) {
-        let resultVc = self.getResultViewController()!
-        try! resultVc.loadMsMarco()
-        runFtsButton.isEnabled = true
-        if let tabBarController = self.tabBarController{
-            tabBarController.selectedViewController = resultVc
-        }
-    }
-
-    @IBAction func loadLdbcClicked(_ sender: Any) {
-        let resultVc = self.getResultViewController()
-        try! resultVc?.loadLdbc()
-        runLdbcButton.isEnabled = true
-        if let tabBarController = self.tabBarController{
-            tabBarController.selectedViewController = resultVc
-        }
-    }
-
-    @IBAction func loadLastFmClicked(_ sender: Any) {
-        let resultVc = self.getResultViewController()
-        try! resultVc?.loadLastFm()
-        runLastFmButton.isEnabled = true
-        if let tabBarController = self.tabBarController{
-            tabBarController.selectedViewController = resultVc
-        }
-    }
-
-    @IBAction func loadMnistClicked(_ sender: Any) {
-        let resultVc = self.getResultViewController()
-        try! resultVc?.loadMnist()
-        runMnistButton.isEnabled = true
-        if let tabBarController = self.tabBarController{
-            tabBarController.selectedViewController = resultVc
-        }
-    }
-
-    @IBAction func runFtsClicked(_ sender: Any) {
-        let resultVc = self.getResultViewController()!
-        try! resultVc.runFts()
-        if let tabBarController = self.tabBarController{
-            tabBarController.selectedViewController = resultVc
-        }
-    }
-
-    @IBAction func runLdbcClicked(_ sender: Any) {
-        let resultVc = self.getResultViewController()!
-        try! resultVc.runLdbc()
-        if let tabBarController = self.tabBarController{
-            tabBarController.selectedViewController = resultVc
-        }
-    }
-
-    @IBAction func runLastFmClicked(_ sender: Any) {
-        let resultVc = self.getResultViewController()!
-        try! resultVc.runLastFm()
-        if let tabBarController = self.tabBarController{
-            tabBarController.selectedViewController = resultVc
-        }
-    }
-
-    @IBAction func runMnistClicked(_ sender: Any) {
-        let resultVc = self.getResultViewController()!
-        try! resultVc.runMnist()
-        if let tabBarController = self.tabBarController{
-            tabBarController.selectedViewController = resultVc
-        }
-    }
-
     func addDoneButtonOnKeyboard() {
         let doneToolbar: UIToolbar = UIToolbar(
             frame: CGRect.init(

@@ -11,7 +11,7 @@
         <!--Result-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ResultViewController" customModule="kuzu_swift_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ResultViewController" customModule="KuzuSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,7 @@
         <!--Query-->
         <scene sceneID="OFy-OD-oTP">
             <objects>
-                <viewController id="1D0-xv-VgC" customClass="QueryViewController" customModule="kuzu_swift_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1D0-xv-VgC" customClass="QueryViewController" customModule="KuzuSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Na-0w-td1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,7 +118,7 @@
         <!--Setup-->
         <scene sceneID="9QS-KZ-VbZ">
             <objects>
-                <viewController id="k1m-ao-HZR" customClass="SetupViewController" customModule="kuzu_swift_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="k1m-ao-HZR" customClass="SetupViewController" customModule="KuzuSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Nq-9m-Rqj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,6 +258,7 @@
                     <tabBarItem key="tabBarItem" title="Setup" image="gear" catalog="system" id="daH-a9-g2Q"/>
                     <connections>
                         <outlet property="bmSizeTextField" destination="zWX-pk-WYx" id="Mkf-eY-47Q"/>
+                        <outlet property="initKuzuButton" destination="muv-58-scV" id="Qzu-LQ-PhA"/>
                         <outlet property="loadLastFmButton" destination="mei-5m-wFd" id="FlW-hR-qzS"/>
                         <outlet property="loadLdbcButton" destination="Qlf-wU-lDd" id="SDq-vv-9MD"/>
                         <outlet property="loadMnistButton" destination="EKS-ce-0Gh" id="ZaA-f3-dbq"/>

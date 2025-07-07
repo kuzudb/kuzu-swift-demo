@@ -1,6 +1,6 @@
 //
-//  kuzu-swift
-//  https://github.com/kuzudb/kuzu-swift
+//  kuzu-swift-demo
+//  https://github.com/kuzudb/kuzu-swift-demo
 //
 //  Copyright © 2023 - 2025 Kùzu Inc.
 //  This code is licensed under MIT license (see LICENSE for details)
@@ -337,7 +337,7 @@ class ResultViewController: UIViewController {
             self.write("Executing query with qvec1")
             res = try! self.conn.execute(
                 preparedStatement,
-                ["queryVector": lastfm_qvec1]
+                ["queryVector": lastfmQvec1]
             )
             self.write("\(res)")
             self.writeExecutionTime(res)
@@ -345,7 +345,7 @@ class ResultViewController: UIViewController {
             self.write("Executing query with qvec2")
             res = try! self.conn.execute(
                 preparedStatement,
-                ["queryVector": lastfm_qvec2]
+                ["queryVector": lastfmQvec2]
             )
             self.write("\(res)")
             self.writeExecutionTime(res)
@@ -353,7 +353,7 @@ class ResultViewController: UIViewController {
             self.write("Executing query with qvec3")
             res = try! self.conn.execute(
                 preparedStatement,
-                ["queryVector": lastfm_qvec3]
+                ["queryVector": lastfmQvec3]
             )
             self.write("\(res)")
             self.writeExecutionTime(res)
@@ -361,7 +361,7 @@ class ResultViewController: UIViewController {
             self.write("Executing query with qvec4")
             res = try! self.conn.execute(
                 preparedStatement,
-                ["queryVector": lastfm_qvec4]
+                ["queryVector": lastfmQvec4]
             )
             self.write("\(res)")
             self.writeExecutionTime(res)
@@ -369,7 +369,7 @@ class ResultViewController: UIViewController {
             self.write("Executing query with qvec5")
             res = try! self.conn.execute(
                 preparedStatement,
-                ["queryVector": lastfm_qvec5]
+                ["queryVector": lastfmQvec5]
             )
             self.write("\(res)")
             self.writeExecutionTime(res)
@@ -377,7 +377,7 @@ class ResultViewController: UIViewController {
             self.write("Executing query with qvec6")
             res = try! self.conn.execute(
                 preparedStatement,
-                ["queryVector": lastfm_qvec6]
+                ["queryVector": lastfmQvec6]
             )
             self.write("\(res)")
             self.writeExecutionTime(res)
@@ -431,7 +431,7 @@ class ResultViewController: UIViewController {
             self.write("Executing query with qvec1")
             res = try! self.conn.execute(
                 preparedStatement,
-                ["queryVector": mnist_qvec1]
+                ["queryVector": mnistQvec1]
             )
             self.write("\(res)")
             self.writeExecutionTime(res)
@@ -439,7 +439,7 @@ class ResultViewController: UIViewController {
             self.write("Executing query with qvec2")
             res = try! self.conn.execute(
                 preparedStatement,
-                ["queryVector": mnist_qvec2]
+                ["queryVector": mnistQvec2]
             )
             self.write("\(res)")
             self.writeExecutionTime(res)
@@ -447,7 +447,7 @@ class ResultViewController: UIViewController {
             self.write("Executing query with qvec3")
             res = try! self.conn.execute(
                 preparedStatement,
-                ["queryVector": mnist_qvec3]
+                ["queryVector": mnistQvec3]
             )
             self.write("\(res)")
             self.writeExecutionTime(res)
@@ -455,7 +455,7 @@ class ResultViewController: UIViewController {
             self.write("Executing query with qvec4")
             res = try! self.conn.execute(
                 preparedStatement,
-                ["queryVector": mnist_qvec4]
+                ["queryVector": mnistQvec4]
             )
             self.write("\(res)")
             self.writeExecutionTime(res)
@@ -463,7 +463,7 @@ class ResultViewController: UIViewController {
             self.write("Executing query with qvec5")
             res = try! self.conn.execute(
                 preparedStatement,
-                ["queryVector": mnist_qvec5]
+                ["queryVector": mnistQvec5]
             )
             self.write("\(res)")
             self.writeExecutionTime(res)
@@ -471,7 +471,7 @@ class ResultViewController: UIViewController {
             self.write("Executing query with qvec6")
             res = try! self.conn.execute(
                 preparedStatement,
-                ["queryVector": mnist_qvec6]
+                ["queryVector": mnistQvec6]
             )
             self.write("\(res)")
             self.writeExecutionTime(res)
