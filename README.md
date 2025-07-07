@@ -1,5 +1,8 @@
 # kuzu-swift-demo
+<img src="Images/Screenshot.png" width="400px">
+
 kuzu-swift-demo is a demo project that shows how to integrate [Kuzu Swift API bindings](https://github.com/kuzudb/kuzu-swift) into an iOS application. 
+
 
 It shows how to:
 - Create a Kuzu database
