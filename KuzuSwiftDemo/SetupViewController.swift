@@ -91,18 +91,21 @@ class SetupViewController: UIViewController {
         let resultVc = self.getResultViewController()!
         try! resultVc.runLdbc()
         toggleResultView()
+        runLdbcButton.isEnabled = false
     }
 
     @IBAction func runLastFmClicked(_ sender: Any) {
         let resultVc = self.getResultViewController()!
         try! resultVc.runLastFm()
         toggleResultView()
+        runLastFmButton.isEnabled = false
     }
 
     @IBAction func runMnistClicked(_ sender: Any) {
         let resultVc = self.getResultViewController()!
         try! resultVc.runMnist()
         toggleResultView()
+        runMnistButton.isEnabled = false
     }
 
     func toggleLoadButtons(_ enabled: Bool){
