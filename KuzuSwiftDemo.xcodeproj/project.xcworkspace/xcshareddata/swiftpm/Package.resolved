@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kuzudb/kuzu-swift/",
       "state" : {
-        "branch" : "main",
-        "revision" : "04afc73b5597751a1b32176348420f0ac6b25c16"
+        "branch" : "v0.11.0",
+        "revision" : "bcbb00732bd4c3f82ae970a3e99cfb8765ac4192"
       }
     }
   ],
