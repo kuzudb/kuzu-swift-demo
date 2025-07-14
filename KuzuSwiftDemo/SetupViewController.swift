@@ -85,6 +85,7 @@ class SetupViewController: UIViewController {
         let resultVc = self.getResultViewController()!
         try! resultVc.runFts()
         toggleResultView()
+        runFtsButton.isEnabled = false
     }
 
     @IBAction func runLdbcClicked(_ sender: Any) {
